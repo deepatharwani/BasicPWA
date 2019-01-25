@@ -1,0 +1,67 @@
+<!-- this is a comment -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+     <meta charset="UTF-8" />
+
+     <meta name="viewport" content="width=device-width,initial-scale=1" /> 
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500"
+      rel="stylesheet"
+    /> 
+
+    <!-- 2 add a theme color <meta name="theme-color" content="#ffffff" /> -->
+
+    <title> PWA Workshop </title>
+
+     <link rel="stylesheet" type="text/css" href="./style.css" /> 
+     <link rel="shortcut icon" href="icons/w.png" /> 
+     <link rel="manifest" href="./manifest.json" /> 
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="center">
+      What's the word?
+      </h1>
+    </header>
+
+    <div id="form">
+      <label for="searchBox">Enter Word</label> 
+      <!-- input and its parameter -->
+      <input
+        type="text"
+        name="word"
+        placeholder="Search for any word"
+        id="searchBox"
+      /> 
+      <span class="errorMsg">
+		
+      </span>
+
+       <button onclick="getData()">
+        Search
+      </button>
+    </div>
+
+    <div id="result">
+      <div id="title"></div>
+      <div id="def">
+        <i><div id="partOfSpeech"></div></i> <!-- italics -->
+        <div id="defs">
+          <br />
+          <ul id="list"></ul> <!-- list -->
+        </div>
+        <span class="noRes"></span>
+      </div>
+    </div> 
+    <!-- add js file -->
+	<script src="app.js">
+	</script>
+  </body>
+</html>
